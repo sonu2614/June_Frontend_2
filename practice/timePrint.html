@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>
+      Write a function capable of receiving another function and a number ‘x’ as
+      an argument and then executing it after ‘x’ seconds.
+    </h1>
+</body>
+
+
+<script>
+
+function xTime(x, y) {
+    // Write your code here
+    let count = 0;
+    const intervalId = setInterval(() => {
+    const now = new Date(); // yahan se hume current date object mil rha
+    let hours = now.getHours(); // yahan se hume current time in 24 hours ke format m
+    let minutes = now.getMinutes(); // yahan se hume current time minutes
+    let seconds = now.getSeconds(); // yahan se hume current minutes
+
+    // yahan se hume time ko convert kr rhe 12 hours format m
+
+//2nd code
+
+    let am_pm = "AM";
+    if(hours > 12) {
+        am_pm = "PM";
+        hours = hours - 12;
+    }
+    // niche hum time ko print kara de rhe h
+    console.log(`${hours}:${minutes}:${seconds} ${am_pm}`);
+    
+    count++;//count humara ye check krne ke liye h ki kitne bar print ho chuka h
+    if(count == y){
+      clearInterval(intervalId);     // jese hi jitne bar hume print krna h wo ho jaega to setinterval ko break karne ke liye time interval use kiya h
+    }
+  }, x * 1000);        
+}
+
+xTime(3, 6);
+
+console.log(typeof null===typeof undefined);
+
+</script>
+
+</html>

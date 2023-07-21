@@ -1,0 +1,52 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px
+    
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.middle .input{
+    display: flex;
+    align-items: stretch;
+    
+}
+
+.middle .input input{
+    border: none;
+    width:500px;
+    font-size: 1rem;
+    background-color: black;
+}
+.middle .input button{
+    border: none;
+    background-color: #303030;
+}
+
+#videos-container{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}

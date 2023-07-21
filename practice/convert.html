@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Write a function to convert key to value and value to key.</h3>
+    <script>
+        function invert_key_value(obj) {
+            // Write your code here
+            const revObj = {};
+            for(const key in obj){
+                const value = obj[key];
+                revObj[value] = key;
+            }
+            return revObj;
+            }
+        console.log(
+            invert_key_value({ red: "#FF0000", green: "#00FF00", white: "#FFFFFF" })
+        ); // Expected output: {#FF0000: "red", #00FF00: "green", #FFFFFF: "white"}
+        </script>
+</body>
+</html>

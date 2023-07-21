@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style></style>
+    <title>Static Template</title>
+  </head>
+  <body>
+  <h1>
+    Write functions to show the sum / difference / product / division of
+    Number 1 and Number 2 in the result field based on the operator selected
+  </h1 >
+
+  <div>Number 1: <input type="text" id="number1" /></div>
+  <br />
+  <div>Number 2: <input type="text" id="number2" /></div>
+  <br />
+  <div id="operator">
+    <div>
+      Operator
+    </div>
+    <div id="table">
+      <table>
+        <tr>
+          <td>
+            <input type="button" value="+" id="+" onclick="calculator('+')"/>
+            <input type="button" value="-" id="-" onclick="calculator('-')"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="*" id="*" onclick="calculator('*')"/>
+            <input type="button" value="/" id="/" onclick="calculator('/')"/>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br />
+  <div>Result: <input type="text" id="result" /></div>
+  <script>
+    // Write your code here
+    function calculator(op) {
+      let result = document.getElementById("result");
+      let number1 = document.getElementById("number1").value;
+      let number2 = document.getElementById("number2").value;
+      switch(op) {
+        case "+":
+          result.value = Number.parseInt(number1) + Number.parseInt(number2);
+          break; 
+        case "-":
+          result.value = number1 - number2;
+          break;
+        case "*":
+          result.value = number1 * number2;
+          break;
+        case "/":
+          result.value = number1 / number2;
+          break;
+        default:
+          result.value = "Invalid operator";
+
+    }
+  }
+  </script>
+</body>
+</html>

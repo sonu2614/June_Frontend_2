@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+}
+
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    color: #515151;
+}
+
+.header h5{
+    font-family: Verdana;
+    font-size: 28px;
+    color: white;
+}
+
+.table-box{
+    width: 100%;
+    padding: 30px;
+    color: white;
+    text-align: start;
+    
+}
+
+.table-box table {
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.table-box table tr th{
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.table-box table tr td{
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px 0px 0px;
+    
+}
+
+#name,#email,#cgpa,#age,#degree{
+    width:32%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#register-btn{
+    width:40%;
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+#update-btn{
+    width:40%;
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#myInput{
+    width: 96%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+
+.table-box table tr td button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    margin: 5px 10px;
+}

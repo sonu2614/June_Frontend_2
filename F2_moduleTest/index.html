@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <title>Student</title>
+</head>
+<body>
+    <div class="header">
+        <h5>Student Management CRUD</h5>
+    </div>
+    <div class="form-box">
+        <form id="register-form">
+            <div>
+                <input type="text" id="name" placeholder="Name"  required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="number" id="cgpa"  placeholder="CGPA" required>  
+                <input type="number" id="age"  placeholder="Age" required>  
+                <input type="text" id="degree" placeholder="Degree" required>
+            </div>
+            <button id="register-btn">Add Student</button>
+            <!-- <button id="update-btn" disabled>Edit Student</button> -->
+        </form>
+    </div>
+    <input type="text"  id="myInput" placeholder="Search By Name, email or degree"  onkeyup="search()">
+    <div class="table-box">
+        <table id="myTable">
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Email</th>
+                <th>CGPA</th>
+                <th>Age</th>
+                <th>Degree</th>
+            </tr>
+            <tbody id="table-data"></tbody>
+            
+        </table>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
